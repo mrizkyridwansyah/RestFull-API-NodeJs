@@ -9,3 +9,13 @@ exports.ok = function (values, res) {
 	res.json(data);
 	res.end();
 }
+
+exports.notFound = function (message, res) {
+	let data = {
+		'status': 404,
+		'message': message
+	}
+
+	res.json(data);
+	res.end();
+}

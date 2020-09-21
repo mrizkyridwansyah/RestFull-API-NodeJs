@@ -7,5 +7,9 @@ module.exports = function (app) {
 		.get(json.index);
 
 	app.route('/supplier')
-		.get(json.allSupplier);
+		.get(json.getSupplier);
+
+	app.route('/supplier/:id')
+		.get(json.getSupplierById);
+
 }
