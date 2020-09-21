@@ -7,6 +7,10 @@ exports.index = function (req, res) {
 	response.ok('Aplikasi running', res);
 }
 
-exports.a = function(req, res) {
-	response.ok('asdf',res);
+exports.allSupplier = function (req, res) {
+	let sql = "SELECT * FROM ms_supplier";
+	connection.query(sql, function (err, result) {
+		if(err) throw err;
+		response.ok(result, res);
+	})
 }

@@ -6,6 +6,6 @@ module.exports = function (app) {
 	app.route('/')
 		.get(json.index);
 
-	app.route('/:name')
-		.get(json.a);
+	app.route('/supplier')
+		.get(json.allSupplier);
 }
