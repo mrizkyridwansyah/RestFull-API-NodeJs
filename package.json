@@ -1,0 +1,19 @@
+{
+  "name": "restfull-api-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/mrizkyridwansyah/RestFull-API-NodeJs.git"
+  },
+  "keywords": [
+    "restfull",
+    "nodejs"
+  ],
+  "author": "M. Rizky Ridwansyah",
+  "license": "ISC"
+}
