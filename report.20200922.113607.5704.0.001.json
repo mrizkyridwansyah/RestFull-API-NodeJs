@@ -1,0 +1,357 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200922.113607.5704.0.001.json",
+    "dumpEventTime": "2020-09-22T11:36:07Z",
+    "dumpEventTimeStamp": "1600749367430",
+    "processId": 5704,
+    "cwd": "E:\\nodejs\\source_code\\restfull_api_nodejs",
+    "commandLine": [
+      "E:/nodejs/node.exe",
+      "app.js"
+    ],
+    "nodejsVersion": "v12.13.0",
+    "wordSize": 32,
+    "arch": "ia32",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.13.0",
+      "v8": "7.7.299.13-node.12",
+      "uv": "1.32.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.13.0/win-x86/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "6.1.7601",
+    "osVersion": "Windows 7 Ultimate Service Pack 1",
+    "osMachine": "i686",
+    "cpus": [
+      {
+        "model": "AMD A6-5200 APU with Radeon(TM) HD Graphics    ",
+        "speed": 1996,
+        "user": 320129,
+        "nice": 0,
+        "sys": 219337,
+        "idle": 6254142,
+        "irq": 14882
+      },
+      {
+        "model": "AMD A6-5200 APU with Radeon(TM) HD Graphics    ",
+        "speed": 1996,
+        "user": 463432,
+        "nice": 0,
+        "sys": 200648,
+        "idle": 6128327,
+        "irq": 13384
+      },
+      {
+        "model": "AMD A6-5200 APU with Radeon(TM) HD Graphics    ",
+        "speed": 1996,
+        "user": 462667,
+        "nice": 0,
+        "sys": 248525,
+        "idle": 6081090,
+        "irq": 15646
+      },
+      {
+        "model": "AMD A6-5200 APU with Radeon(TM) HD Graphics    ",
+        "speed": 1996,
+        "user": 460764,
+        "nice": 0,
+        "sys": 256590,
+        "idle": 6074803,
+        "irq": 66784
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wireless Network Connection",
+        "internal": false,
+        "mac": "70:18:8b:1c:27:13",
+        "address": "fe80::9cf2:e377:7356:ab69",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "Wireless Network Connection",
+        "internal": false,
+        "mac": "70:18:8b:1c:27:13",
+        "address": "192.168.43.141",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Teredo Tunneling Pseudo-Interface",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "2001:0:ca03:da8a:2c5a:484:3f57:d472",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Teredo Tunneling Pseudo-Interface",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::2c5a:484:3f57:d472",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      }
+    ],
+    "host": "ridwansyah"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+  ],
+  "javascriptHeap": {
+    "totalMemory": 401915904,
+    "totalCommittedMemory": 401915904,
+    "usedMemory": 394846828,
+    "availableMemory": 6282404,
+    "memoryLimit": 401604608,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 262008,
+        "used": 22100,
+        "available": 239908
+      },
+      "new_space": {
+        "memorySize": 8388608,
+        "committedMemory": 8388608,
+        "capacity": 4192128,
+        "used": 2374700,
+        "available": 1817428
+      },
+      "old_space": {
+        "memorySize": 390402048,
+        "committedMemory": 390402048,
+        "capacity": 390180876,
+        "used": 390147936,
+        "available": 32940
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 425984,
+        "capacity": 247552,
+        "used": 247552,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 528384,
+        "capacity": 201920,
+        "used": 201920,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1859584,
+        "committedMemory": 1859584,
+        "capacity": 1850604,
+        "used": 1850604,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2016,
+        "used": 2016,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 4192128,
+        "used": 0,
+        "available": 4192128
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 73.804,
+    "kernelCpuSeconds": 1.279,
+    "cpuConsumptionPercent": 174.612,
+    "maxRss": 444751872,
+    "pageFaults": {
+      "IORequired": 129507,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 218,
+      "writes": 1
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "ACLOCAL_PATH": "/mingw32/share/aclocal:/usr/share/aclocal",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\neymar\\AppData\\Roaming",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "RIDWANSYAH",
+    "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+    "CONFIG_SITE": "/mingw32/etc/config.site",
+    "DISPLAY": "needs-to-be-defined",
+    "EXEPATH": "C:\\Program Files\\Git",
+    "FP_NO_HOST_CHECK": "NO",
+    "GOOGLE_API_KEY": "no",
+    "GOOGLE_DEFAULT_CLIENT_ID": "no",
+    "GOOGLE_DEFAULT_CLIENT_SECRET": "no",
+    "HOME": "C:\\Users\\neymar",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\neymar",
+    "HOSTNAME": "ridwansyah",
+    "include": "C:\\Program Files\\Microsoft Visual Studio\\VC98\\atl\\include;C:\\Program Files\\Microsoft Visual Studio\\VC98\\mfc\\include;C:\\Program Files\\Microsoft Visual Studio\\VC98\\include",
+    "INFOPATH": "/usr/local/info:/usr/share/info:/usr/info:/share/info",
+    "LANG": "en_US.UTF-8",
+    "lib": "C:\\Program Files\\Microsoft Visual Studio\\VC98\\mfc\\lib;C:\\Program Files\\Microsoft Visual Studio\\VC98\\lib",
+    "LOCALAPPDATA": "C:\\Users\\neymar\\AppData\\Local",
+    "LOGONSERVER": "\\\\RIDWANSYAH",
+    "MANPATH": "/mingw32/local/man:/mingw32/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man",
+    "MINGW_CHOST": "i686-w64-mingw32",
+    "MINGW_PACKAGE_PREFIX": "mingw-w64-i686",
+    "MINGW_PREFIX": "/mingw32",
+    "MSDevDir": "C:\\Program Files\\Microsoft Visual Studio\\Common\\MSDev98",
+    "MSYSTEM": "MINGW32",
+    "MSYSTEM_CARCH": "i686",
+    "MSYSTEM_CHOST": "i686-w64-mingw32",
+    "MSYSTEM_PREFIX": "/mingw32",
+    "NUMBER_OF_PROCESSORS": "4",
+    "ORIGINAL_PATH": "C:\\Program Files\\Git\\mingw32\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\neymar\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-StaticStatic;C:\\WINDOWS\\Microsoft.NET\\Framework\\v4.0.30319;C:\\Program Files\\Microsoft\\Web Platform Installer;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Microsoft Visual Studio\\Common\\Tools\\WinNT;C:\\Program Files\\Microsoft Visual Studio\\Common\\MSDev98\\Bin;C:\\Program Files\\Microsoft Visual Studio\\Common\\Tools;C:\\Program Files\\Microsoft Visual Studio\\VC98\\bin;C:\\BC5\\BIN;C:\\Users\\neymar\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\neymar\\AppData\\Roaming\\npm",
+    "ORIGINAL_TEMP": "/tmp",
+    "ORIGINAL_TMP": "/tmp",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Users\\neymar\\bin;C:\\Program Files\\Git\\mingw32\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw32\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\neymar\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-StaticStatic;C:\\WINDOWS\\Microsoft.NET\\Framework\\v4.0.30319;C:\\Program Files\\Microsoft\\Web Platform Installer;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Microsoft Visual Studio\\Common\\Tools\\WinNT;C:\\Program Files\\Microsoft Visual Studio\\Common\\MSDev98\\Bin;C:\\Program Files\\Microsoft Visual Studio\\Common\\Tools;C:\\Program Files\\Microsoft Visual Studio\\VC98\\bin;C:\\BC5\\BIN;C:\\Users\\neymar\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\neymar\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PKG_CONFIG_PATH": "/mingw32/lib/pkgconfig:/mingw32/share/pkgconfig",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "x86",
+    "PROCESSOR_IDENTIFIER": "x86 Family 22 Model 0 Stepping 1, AuthenticAMD",
+    "PROCESSOR_LEVEL": "22",
+    "PROCESSOR_REVISION": "0001",
+    "ProgramData": "C:\\ProgramData",
+    "PROGRAMFILES": "C:\\Program Files",
+    "PS1": "\\[\\033]0;$TITLEPREFIX:$PWD\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ ",
+    "PSModulePath": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "/e/nodejs/source_code/restfull_api_nodejs",
+    "SESSIONNAME": "Console",
+    "SHELL": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+    "SHLVL": "1",
+    "SSH_ASKPASS": "/mingw32/libexec/git-core/git-gui--askpass",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\Windows",
+    "TEMP": "C:\\Users\\neymar\\AppData\\Local\\Temp",
+    "TERM_PROGRAM": "mintty",
+    "TERM_PROGRAM_VERSION": "3.2.0",
+    "TMP": "C:\\Users\\neymar\\AppData\\Local\\Temp",
+    "TMPDIR": "C:\\Users\\neymar\\AppData\\Local\\Temp",
+    "USERDOMAIN": "RIDWANSYAH",
+    "USERNAME": "neymar",
+    "USERPROFILE": "C:\\Users\\neymar",
+    "VS110COMNTOOLS": "C:\\Program Files\\Microsoft Visual Studio 11.0\\Common7\\Tools\\",
+    "VS120COMNTOOLS": "C:\\Program Files\\Microsoft Visual Studio 12.0\\Common7\\Tools\\",
+    "VS140COMNTOOLS": "C:\\Program Files\\Microsoft Visual Studio 14.0\\Common7\\Tools\\",
+    "WINDIR": "C:\\Windows",
+    "windows_tracing_flags": "3",
+    "windows_tracing_logfile": "C:\\BVTBin\\Tests\\installpackage\\csilogfile.log",
+    "_": "/usr/bin/winpty"
+  },
+  "sharedObjects": [
+    "E:\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\system32\\kernel32.dll",
+    "C:\\Windows\\system32\\KERNELBASE.dll",
+    "C:\\Windows\\system32\\dbghelp.dll",
+    "C:\\Windows\\system32\\msvcrt.dll",
+    "C:\\Windows\\system32\\WS2_32.dll",
+    "C:\\Windows\\system32\\RPCRT4.dll",
+    "C:\\Windows\\system32\\NSI.dll",
+    "C:\\Windows\\system32\\ADVAPI32.dll",
+    "C:\\Windows\\SYSTEM32\\sechost.dll",
+    "C:\\Windows\\system32\\USER32.dll",
+    "C:\\Windows\\system32\\GDI32.dll",
+    "C:\\Windows\\system32\\LPK.dll",
+    "C:\\Windows\\system32\\USP10.dll",
+    "C:\\Windows\\system32\\IPHLPAPI.DLL",
+    "C:\\Windows\\system32\\WINNSI.DLL",
+    "C:\\Windows\\system32\\PSAPI.DLL",
+    "C:\\Windows\\system32\\USERENV.dll",
+    "C:\\Windows\\system32\\profapi.dll",
+    "C:\\Windows\\system32\\CRYPT32.dll",
+    "C:\\Windows\\system32\\MSASN1.dll",
+    "C:\\Windows\\system32\\bcrypt.dll",
+    "C:\\Windows\\system32\\WINMM.dll",
+    "C:\\Windows\\system32\\IMM32.DLL",
+    "C:\\Windows\\system32\\MSCTF.dll",
+    "C:\\Windows\\system32\\api-ms-win-core-synch-l1-2-0.DLL",
+    "C:\\Windows\\system32\\powrprof.dll",
+    "C:\\Windows\\system32\\SETUPAPI.dll",
+    "C:\\Windows\\system32\\CFGMGR32.dll",
+    "C:\\Windows\\system32\\OLEAUT32.dll",
+    "C:\\Windows\\system32\\ole32.dll",
+    "C:\\Windows\\system32\\DEVOBJ.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\wshtcpip.dll",
+    "C:\\Windows\\System32\\wship6.dll",
+    "C:\\Windows\\system32\\bcryptprimitives.dll",
+    "C:\\Windows\\system32\\dhcpcsvc.DLL",
+    "C:\\Windows\\system32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\system32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\system32\\wshbth.dll",
+    "C:\\Windows\\system32\\cryptbase.dll",
+    "C:\\Windows\\system32\\rasadhlp.dll",
+    "C:\\Windows\\System32\\fwpuclnt.dll"
+  ]
+}

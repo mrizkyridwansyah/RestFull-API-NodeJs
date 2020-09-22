@@ -35,7 +35,7 @@ exports.getSupplierById = function (req, res) {
 }
 
 exports.addSupplier = function (req, res) {
-	connection.query("SELECT COUNT(*) + 1 as jml FROM ms_supplier", function (err,result) {
+	connection.query("SELECT RIGHT(MAX(IDSupplier),6) + 1 as jml FROM ms_supplier", function (err,result) {
 		if(err) throw err;
 		let data = {
 			IDSupplier: "SUP." + String("000000" + result[0].jml).slice(-6),
@@ -86,4 +86,24 @@ exports.deleteSupplier = function (req, res) {
 			response.notFound("No data for this id", res);
 		}
 	});
+}
+
+exports.nested = function (req, res) {
+	let sql = "SELECT a.IDStock, a.NamaStock, b.Lvl, b.Jumlah, b.HargaJual FROM ms_stock a join ms_stock_detil b ON a.IDStock = b.IDStock";
+	connection.query(sql, req.params.id , function (err, rows, fields) {
+		if(err) throw err;
+		// let a = {
+		// 	"stock": rows.reduce(() => {
+				
+		// 	})
+		// }rows.reduce((group, item) => {
+		// 	console.log(group[item.IDStock]);
+		// })
+		// if(result.length == 0){
+		// 	response.notFound("No data for this request",res);
+		// }
+		// else{
+			response.ok(rows, res);			
+		// }
+	})
 }
