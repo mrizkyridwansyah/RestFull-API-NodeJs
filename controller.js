@@ -1,5 +1,6 @@
 'use strict';
 
+let moment = require('moment');
 let response = require('./response.js');
 let connection = require('./connection.js');
 
@@ -31,4 +32,26 @@ exports.getSupplierById = function (req, res) {
 			response.ok(result, res);			
 		}
 	})
+}
+
+exports.addSupplier = function (req, res) {
+	connection.query("SELECT COUNT(*) + 1 as jml FROM ms_supplier", function (err,result) {
+		if(err) throw err;
+		let data = {
+			IDSupplier: "SUP." + String("000000" + result[0].jml).slice(-6),
+			NamaSupplier: req.body.nama,
+			AlamatSupplier: req.body.alamat,
+			NoTelp: req.body.telp,
+			NoFax: req.body.fax,
+			Status: 'A',
+			TglInput: moment().format('YYYY-MM-DD HH:mm:ss')	
+		}
+
+		let sql = "INSERT INTO ms_supplier SET ?";
+		connection.query(sql, data, function (err, result) {
+			if(err) throw err;
+			response.ok("Data Tersimpan", res);
+		})
+	});
+
 }

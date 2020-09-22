@@ -12,4 +12,9 @@ module.exports = function (app) {
 	app.route('/supplier/:id')
 		.get(json.getSupplierById);
 
+	app.route('/supplier')
+		.post(json.addSupplier);
+
+	app.route('/supplier/:id')
+		.put(json.updateSupplier);
 }
