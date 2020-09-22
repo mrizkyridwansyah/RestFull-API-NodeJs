@@ -15,6 +15,9 @@ module.exports = function (app) {
 	app.route('/supplier')
 		.post(json.addSupplier);
 
-	app.route('/supplier/:id')
+	app.route('/supplier')
 		.put(json.updateSupplier);
+
+	app.route('/supplier')
+		.delete(json.deleteSupplier);
 }
