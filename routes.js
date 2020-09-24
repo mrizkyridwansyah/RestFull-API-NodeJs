@@ -20,7 +20,4 @@ module.exports = function (app) {
 
 	app.route('/supplier')
 		.delete(json.deleteSupplier);
-
-	app.route('/nested')
-		.get(json.nested);
 }

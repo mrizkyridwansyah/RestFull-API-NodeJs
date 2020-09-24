@@ -1,21 +1,11 @@
 'use strict';
 
-exports.ok = function (values, res) {
+exports.message = function (status, message, values, res) {
 	let data = {
-		'status': 200,
+		'message': message,
 		'values': values
 	}
 
-	res.json(data);
-	res.end();
-}
-
-exports.notFound = function (message, res) {
-	let data = {
-		'status': 404,
-		'message': message
-	}
-
-	res.json(data);
+	res.status(status).json(data);
 	res.end();
 }

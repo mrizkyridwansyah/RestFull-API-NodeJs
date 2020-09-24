@@ -5,7 +5,7 @@ let response = require('./response.js');
 let connection = require('./connection.js');
 
 exports.index = function (req, res) {
-	response.ok('Aplikasi running', res);
+	response.message(200, 'Aplikasi running', null, res);
 }
 
 exports.getSupplier = function (req, res) {
@@ -13,10 +13,10 @@ exports.getSupplier = function (req, res) {
 	connection.query(sql, function (err, result) {
 		if(err) throw err;
 		if(result.length == 0){
-			response.notFound("No data for this request",res);
+			response.message(404,"No data for this request",res);
 		}
 		else{
-			response.ok(result, res);			
+			response.message(200, "" ,result, res);			
 		}
 	})
 }
@@ -26,10 +26,10 @@ exports.getSupplierById = function (req, res) {
 	connection.query(sql, req.params.id , function (err, result) {
 		if(err) throw err;
 		if(result.length == 0){
-			response.notFound("No data for this request",res);
+			response.message(404,"No data for this request",res);
 		}
 		else{
-			response.ok(result, res);			
+			response.message(200, "", result, res);			
 		}
 	})
 }
@@ -50,7 +50,7 @@ exports.addSupplier = function (req, res) {
 		let sql = "INSERT INTO ms_supplier SET ?";
 		connection.query(sql, data, function (err, result) {
 			if(err) throw err;
-			response.ok("Data has been saved", res);
+			response.message(200,"Data has been saved", null, res);
 		})
 	});
 }
@@ -63,11 +63,11 @@ exports.updateSupplier = function (req, res) {
 			let data = [req.body.nama, req.body.alamat, req.body.telp, req.body.fax, req.body.status, req.body.id];
 			connection.query(sql, data, function (err, result) {
 				if(err) throw err;
-				response.ok("Data has been updated", res);
+				response.message(200,"Data has been updated", null, res);
 			})			
 		}
 		else{
-			response.notFound("No data for this id", res);
+			response.message(404,"No data for this id", null, res);
 		}
 	});
 }
@@ -79,31 +79,11 @@ exports.deleteSupplier = function (req, res) {
 			let sql = "DELETE FROM ms_supplier WHERE IDSupplier = ?";
 			connection.query(sql, [req.body.id], function (err, result) {
 				if(err) throw err;
-				response.ok("Data has been deleted", res);
+				response.message(200,"Data has been deleted", null, res);
 			})
 		}
 		else{
-			response.notFound("No data for this id", res);
+			response.message(404,"No data for this id", null, res);
 		}
 	});
-}
-
-exports.nested = function (req, res) {
-	let sql = "SELECT a.IDStock, a.NamaStock, b.Lvl, b.Jumlah, b.HargaJual FROM ms_stock a join ms_stock_detil b ON a.IDStock = b.IDStock";
-	connection.query(sql, req.params.id , function (err, rows, fields) {
-		if(err) throw err;
-		// let a = {
-		// 	"stock": rows.reduce(() => {
-				
-		// 	})
-		// }rows.reduce((group, item) => {
-		// 	console.log(group[item.IDStock]);
-		// })
-		// if(result.length == 0){
-		// 	response.notFound("No data for this request",res);
-		// }
-		// else{
-			response.ok(rows, res);			
-		// }
-	})
 }
